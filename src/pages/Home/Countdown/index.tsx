@@ -33,7 +33,7 @@ export function CountDown() {
         }
     },[activeCycle, totalSeconds, activeCycleId, setSecondsPassed, markCurrentCycleAsFinished])
 
-    const currentSeconds = activeCycle ? totalSeconds -amountSecondsPassed : 0
+    const currentSeconds = activeCycle ? totalSeconds - amountSecondsPassed : 0
 
     const minutesAmount = Math.floor(currentSeconds / 60)
     const secondsAmount = currentSeconds % 60
