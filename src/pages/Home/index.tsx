@@ -2,7 +2,7 @@ import { HandPalm, Play } from "@phosphor-icons/react";
 import { HomeContainer, StartCountdownButton, StopCountdownButton } from "./styles";
 import { createContext, useState } from "react";
 import { NewCycleForm } from "./NewCycleForm";
-import { CountDown } from "./Countdown";
+import { Countdown } from "../Home/Countdown/index";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from 'zod'
 import { FormProvider, useForm } from "react-hook-form";
@@ -109,7 +109,7 @@ export function Home() {
                   <NewCycleForm/>
                 </FormProvider>
                 
-                <CountDown/>
+                <Countdown/>
                 </CyclesContext.Provider>
 
             { activeCycle ? (

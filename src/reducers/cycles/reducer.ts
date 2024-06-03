@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { produce } from 'immer'
 
 import { ActionTypes } from './actions'
